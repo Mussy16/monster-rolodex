@@ -35,13 +35,15 @@ class App extends Component {
       return monster.name.toLocaleLowerCase().includes(searchField);
     });
     return (
-      <div className="App">
+      <div className ="App">
+        <h1 className="app-title">
+          Seach Monsters
+        </h1>
         <SearchBox
           onChangeHandler={onSearchChange}
           className="monsters-search-box"
           placeholder="Search-monsters"
         />
-
         <CardList monsters={FiltredMonsters} />
       </div>
     );
